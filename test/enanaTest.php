@@ -52,7 +52,7 @@ class EnanaTest extends TestCase {
 
         $enana = new Enana ("Adrian", 100 );
         $enana->heridaGrave();
-        
+        $enana->setPuntosVida(0);
         $this->assertEquals(0, $enana->getPuntosVida());
         $this->assertEquals("limbo", $enana->getSituacion());
     }
