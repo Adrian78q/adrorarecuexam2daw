@@ -8,7 +8,7 @@ class EnanaTest extends TestCase {
     public function testCreandoEnana() {
         #Se probará la creación de enanas vivas, muertas y en limbo y se comprobará tanto la vida como el estado
     
-        $enana = new Enana ("Adrian", );
+        $enana = new Enana ("Adrian", 100 );
         if ($enana->getPuntosVida() > 0) {
             $enana->setSituacion("viva");
             $this->assertEquals("viva", $enana->getSituacion());
