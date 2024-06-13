@@ -88,7 +88,7 @@ class EnanaTest extends TestCase {
 
         $enana = new Enana ("Adrian", 0 );
         if ($enana->getPuntosVida() == 0) {
-            
+            $enana->pocimaExtra();
             $enana->setPuntosVida(50);
             $this->assertEquals(50, $enana->getPuntosVida());
             $this->assertEquals("viva", $enana->getSituacion());
